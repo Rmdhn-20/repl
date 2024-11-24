@@ -1,9 +1,9 @@
-FROM ubuntu:latest
+FROM node:lts-buster
 
 RUN apt-get update && \
   apt-get install -y \
   unzip \
-  python3 \
+  python \
   wget \
   nodejs \
   curl && \
