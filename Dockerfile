@@ -3,7 +3,7 @@ FROM ubuntu:latest
 RUN apt-get update && \
   apt-get install -y \
   unzip \
-  python \
+  python3 \
   wget \
   nodejs \
   curl && \
