@@ -1,13 +1,13 @@
-FROM node:lts-buster
+FROM ubuntu:latest
 
 RUN apt-get update && \
   apt-get install -y \
   unzip \
   python \
   wget \
+  nodejs \
   curl && \
-  apt-get upgrade -y && \
-  rm -rf /var/lib/apt/lists/*
+  apt-get upgrade -y 
 
 COPY package.json . .
 
